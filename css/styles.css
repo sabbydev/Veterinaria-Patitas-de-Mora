@@ -17,11 +17,19 @@ a {
 :root {
     --body-background-color: #faf1e1;
     --header-background-color: #a34749;
+    --h1-color: #fff;
+    --nav__link-background-color: transparent;
+    --nav__link-background-color--hover: #e08553;
     --footer-background-color: #8e705d;
-    --primary-accent-color: #ff9f68;
+    --social-link-color--hover: #e08553;
     --text-color: #3a3a3a;
     --button-background-color: #ff9f68;
+    --button-background-color--hover: #e08553;
+    --button-text-color: #fff;
+    --button-border-radius: 12px;
+    --border-color: #ff9f68;
     --border-radius: 12px;
+    --call-to-action-background-color: #ff9f68;
 }
 
 html {
@@ -41,7 +49,7 @@ header {
     align-items: center;
     background-color: var(--header-background-color);
     padding: 20px;
-    border-bottom: 5px solid var(--primary-accent-color);
+    border-bottom: 5px solid var(--border-color);
 }
 
 .header__logo {
@@ -52,7 +60,7 @@ header {
 }
 
 .header__title {
-    color: white;
+    color: var(--h1-color);
     font-size: 2rem;
 }
 
@@ -63,13 +71,17 @@ header {
 
 .nav__link {
     padding: 10px 20px;
-    background-color: var(--primary-accent-color);
+    background-color: var(--nav__link-background-color);
     border-radius: var(--border-radius);
     transition: background-color 0.3s ease;
 }
 
 .nav__link:hover {
-    background-color: #e08553;
+    background-color: var(--nav__link-background-color--hover);
+}
+
+.call-to-action {
+    background-color: var(--call-to-action-background-color);
 }
 
 .main {
@@ -94,7 +106,7 @@ header {
     padding: 20px;
     background-color: var(--footer-background-color);
     color: white;
-    border-top: 5px solid var(--primary-accent-color);
+    border-top: 5px solid var(--border-color);
     flex-wrap: wrap;
 }
 
@@ -129,23 +141,13 @@ header {
     transition: color 0.3s ease;
 }
 
-.footer__social-link svg {
-    width: 24px;
-    height: 24px;
-}
-
 .footer__social-link:hover {
-    color: #e08553;
+    color: var(--social-link-color--hover);
 }
 
 .footer__social-icon {
     width: 100%;
     height: 100%;
-}
-
-.footer__hours-list {
-    list-style-type: none;
-    padding-left: 0;
 }
 
 .footer__rights {
@@ -160,16 +162,16 @@ iframe {
 
 button {
     background-color: var(--button-background-color);
-    color: white;
+    color: var(--button-text-color);
     border: none;
     padding: 10px 20px;
-    border-radius: var(--border-radius);
+    border-radius: var(--button-border-radius);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e08553;
+    background-color: var(--button-background-color--hover);
 }
 
 @media (max-width: 768px) {

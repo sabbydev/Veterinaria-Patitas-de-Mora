@@ -35,6 +35,7 @@ a {
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -75,6 +76,7 @@ header {
     background-color: var(--nav__link-background-color);
     border-radius: var(--border-radius);
     transition: background-color 0.3s ease;
+    font-size: 1.125rem;
 }
 
 .nav__link:hover {
@@ -85,7 +87,7 @@ header {
     background-color: var(--call-to-action-background-color);
 }
 
-.main {
+main {
     padding: 20px;
     background-color: var(--body-background-color);
 }
@@ -99,7 +101,7 @@ header {
     background-color: white;
 }
 
-.footer {
+footer {
     height: 30vw;
     display: flex;
     justify-content: space-between;

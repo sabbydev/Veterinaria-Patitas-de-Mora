@@ -520,6 +520,7 @@ footer {
     border-radius: var(--button-border-radius);
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .call-to-action:hover {

@@ -13,6 +13,12 @@
         <img src="media/logo.png" alt="logo" class="header__logo">
         <h1>Patitas de Mora</h1>
         <nav class="header__nav">
+            <input type="checkbox" id="burger-menu" class="menu-checkbox">
+            <label for="burger-menu" class="menu-toggle">
+                <div class="menu-toggle__line"></div>
+                <div class="menu-toggle__line"></div>
+                <div class="menu-toggle__line"></div>
+            </label>
             <ul class="nav__list">
                 <li class="nav__item"><a href="#inicio" class="nav__a">Inicio</a></li>
                 <li class="nav__item"><a href="#servicios" class="nav__a">Servicios</a></li>
@@ -150,7 +156,7 @@
             </div>
             <div class="section__contenido">
                 <div class="nosotros">
-                    <img src="media/about/veterinaria.png" alt="" width="350px">
+                    <img src="media/about/veterinaria.png" alt="" class="nosotros__img" width="350px">
                     <p class="nosotros__descripcion">
                         En <strong class="nosotros__strong">Patitas de Mora</strong>, nos dedicamos al cuidado integral de las mascotas, ofreciendo un servicio
                         veterinario de alta calidad en un ambiente cálido y profesional. Con más de 10 años de experiencia, nuestro
@@ -165,11 +171,11 @@
                         empatía, asegurando la salud y el bienestar de las mascotas, al mismo tiempo que ofrecemos un trato humano 
                         y cercano a sus dueños.
                     </p>
-                    <img src="media/about/mision.png" alt="" width="270px">
+                    <img src="media/about/mision.png" alt="" class="nosotros__img" width="270px">
                 </div>
 
                 <div class="nosotros">
-                    <img src="media/about/vision.png" alt="" width="200px">
+                    <img src="media/about/vision.png" alt="" class="nosotros__img" width="200px">
                     <p class="nosotros__vision">
                         <strong class="nosotros__strong">Visión:</strong> Ser la veterinaria de referencia en la comunidad, reconocida por nuestro compromiso 
                         con el bienestar animal, la mejora continua de nuestros servicios y el desarrollo profesional de nuestro equipo.
@@ -181,18 +187,18 @@
                         tratamiento ético y respetuoso de cada mascota, y trabajamos con pasión para ofrecer soluciones que 
                         mejoren su calidad de vida.
                     </p>
-                    <img src="media/about/valores.png" alt="" width="250px">
+                    <img src="media/about/valores.png" alt="" class="nosotros__img" width="250px">
                 </div>
             </div>
         </section>        
         <section id="contacto" class="seccion--contacto">
             <div class="contacto">
-                <span class="contacto__titulo">¿Tienes alguna consulta o deseas agendar una cita? </span>
+                <span class="contacto__titulo">¿Tienes alguna consulta o deseas agendar una cita?</span>
                 <p class="contacto__descripcion">
                     Completa el formulario y nos pondremos en contacto contigo 
                     lo antes posible.<br>¡Estamos aquí para ayudarte a cuidar de tu mascota!
                 </p>
-                <form action="#" method="post" class="contacto__formulario">
+                <form id="formulario-contacto" class="contacto__formulario">
                     <div class="form__grupo">
                         <label for="nombre" class="form__label">Nombre</label>
                         <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Tu nombre" required>
@@ -215,7 +221,12 @@
             <div class="mapa">
                 <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Jir%C3%B3n%20Hern%C3%A1n%20Velarde%20260+(Veterinaria%20Patitas%20de%20Mora)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
-        </section>        
+            <div id="ventana-flotante" class="ventana-flotante">
+                <h3 class="h3--ventana-flotante">¡Gracias por tu mensaje!</h3>
+                <p class="p--ventana-flotante">Hemos recibido tu solicitud. Nos pondremos en contacto contigo pronto.</p>
+                <a href="#" class="cerrar">Cerrar</a>
+            </div>
+        </section>
     </main>
     <footer>
         <ol class="footer__horarios">
@@ -230,5 +241,6 @@
         </ul>
         <p class="footer__copyright">&copy; 2024 Patitas de Mora. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

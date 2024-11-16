@@ -1,0 +1,422 @@
+main {
+    padding: 20px;
+}
+
+.section {
+    min-height: 90vh;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.section--inicio {
+    justify-content: center;
+    background-image: url(../media/slogan-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 10vw;
+    gap: 40px;
+}
+
+.inicio__slogan {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-family: "PT Mono";
+    width: 50vw;
+}
+
+.slogan__strong {
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 1;
+    font-family: Allura;
+}
+
+.inicio__call-to-action {
+    display: flex;
+}
+
+.inicio__call-to-action > a {
+    margin-left: 5vw;
+    font-size: 1.5rem;
+}
+
+.section__h2 {
+    display: flex;
+    justify-content: center;
+    margin: 2vw 0 5vw 0;
+}
+
+.h2--servicios, .h2--especialistas, .h2--nosotros {
+    font-size: 2rem;
+    padding: 1% 5%;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.h2--servicios {
+    background-color: #f8ac5c;
+}
+
+.h2--especialistas {
+    background-color: #933739;
+    color: #fff;
+}
+
+.h2--nosotros {
+    background-color: #48c4ac ;
+}
+
+.section__contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.servicios, .especialistas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4vw;
+    column-gap: 4vw;
+}
+
+.servicio, .especialista {
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio {
+    background-color: #f8ac5c;
+    border-radius: 32px;
+    color: #000;
+    justify-content: center;
+}
+
+.especialista {
+    background-color: #933739;;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.servicio__img, .especialista__img {
+    margin-top: 5%;
+}
+
+.especialista__nombre {
+    text-align: center;
+}
+
+.servicio__titulo, .especialista__especialidad {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.servicio__descripcion, .especialista__descripcion {
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 16px
+}
+
+.servicio__descripcion {
+    background-color: #d88c3c;
+}
+
+.especialista__descripcion {
+    background-color: #a35154;;
+}
+
+.nosotros{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+    gap: 5%;
+    font-size: 1.2rem;
+}
+
+.nosotros__strong {
+    font-size: 1.5rem;
+}
+
+.nosotros__mision, .nosotros__valores {
+    text-align: end;
+}
+
+.seccion--contacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vw 0;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+.contacto__titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contacto__descripcion {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.contacto__formulario {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form__grupo {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form__input, .form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form__textarea {
+    resize: none;
+}
+
+.form__input:focus, .form__textarea:focus {
+    border-color: #ffac5c;
+    outline: none;
+}
+
+.form__button {
+    background-color: #ffac5c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form__button:hover {
+    background-color: #e59e48;
+}
+
+.mapa {
+    width: 40vw;
+}
+
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ventana-flotante {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ventana-flotante:target {
+    display: block;
+}
+
+.h3--ventana-flotante, .p--ventana-flotante {
+    text-align: center;
+}
+
+.ventana-flotante .cerrar {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.ventana-flotante .cerrar:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .inicio {
+        margin: 0 5vw;
+        gap: 40px;
+    }
+
+    .inicio__slogan {
+        font-size: 1.5rem;
+    }
+
+    .slogan__strong {
+        font-size: 9rem;
+    }
+
+    .servicio, .especialista {
+        width: 40vw;
+    }
+
+    .servicios, .especialistas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nosotros{
+        margin: 0 10%;
+        gap: 5%;
+    }
+    
+    .seccion--contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        width: 90%;
+        margin-bottom: 5vw;
+    }
+
+    .contacto__titulo {
+        font-size: 2rem;
+    }
+
+    .contacto__formulario {
+        width: 90%;
+    }
+
+    .mapa {
+        width: 90%;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section--inicio {
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        min-height: 50vw;
+    }
+
+    .inicio {
+        align-items: center;
+    }
+
+    .inicio__slogan {
+        width: 80vw;
+        font-size: 1.2rem;
+    }
+
+    .inicio__call-to-action > a{
+        margin-left: 0;
+    }
+
+    .servicio--mas {
+        display: none;
+    }
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
+    .nosotros__strong {
+        font-size: 1.5rem;
+    }
+    
+    .nosotros--reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nosotros__mision, .nosotros__valores {
+        text-align: start;
+    }
+
+    .contacto__titulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section--inicio {
+        min-height: 75vw;
+    }
+
+    .servicios, .especialistas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servicio, .especialista {
+        width: 60vw;
+    }
+
+    .nosotros {
+        margin-bottom: 10%;
+    }
+
+    .nosotros__img {
+        width: 50%;
+    }
+
+    .contacto__formulario {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .slogan__strong {
+        font-size: calc(.5rem + 20vw);
+    }
+
+    .servicio__img, .especialista__img {
+        width: 60%;
+    }
+
+    .nosotros {
+        margin-bottom: 20%;
+    }
+
+    .contacto__titulo {
+        font-size: 1.2rem;
+    }
+}

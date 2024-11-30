@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "PT Mono";
+    src: url(../fonts/PT_Mono/PTMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Allura;
+    src: url(../fonts/Allura/Allura-Regular.ttf) format("truetype");
+}

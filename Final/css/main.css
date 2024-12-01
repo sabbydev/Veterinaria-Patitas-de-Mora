@@ -276,6 +276,16 @@ iframe {
     text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+    .servicio, .especialista {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .servicio:hover, .especialista:hover {
+        transform: scale(1.1);
+    }
+}
+
 @media (max-width: 1300px) {
     .inicio {
         margin: 0 5vw;
